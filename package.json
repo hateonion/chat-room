@@ -5,6 +5,9 @@
   "repository": "https://github.com/hateonion/chat-room.git",
   "author": "hateonion <ouyang_yingjie@outlook.com>",
   "license": "MIT",
+  "scripts": {
+    "watch-server": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/server.ts"
+  },
   "devDependencies": {
     "@types/koa": "^2.0.46",
     "@types/koa-router": "^7.0.32",
@@ -13,6 +16,8 @@
     "nodemon": "^1.18.4",
     "ts-node": "^7.0.1",
     "tslint": "^5.11.0",
+    "tslint-config-airbnb": "^5.11.0",
+    "tslint-config-prettier": "^1.15.0",
     "typescript": "^3.0.3"
   }
 }
